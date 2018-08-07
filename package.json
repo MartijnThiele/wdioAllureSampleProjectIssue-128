@@ -1,0 +1,25 @@
+{
+  "name": "wdioAllureIssue128",
+  "version": "1.0.0",
+  "description": "Sample code to reproduct wdio allure issue 128",
+  "main": "wdio.conf.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Martijn Thiele",
+  "license": "ISC",
+  "devDependencies": {
+    "allure-commandline": "^2.5.0",
+    "chai": "^4.1.2",
+    "wdio-allure-reporter": "^0.6.3",
+    "wdio-dot-reporter": "0.0.9",
+    "wdio-mocha-framework": "^0.6.2",
+    "wdio-selenium-standalone-service": "0.0.10",
+    "wdio-spec-reporter": "^0.1.4",
+    "webdriverio": "^4.13.1"
+  },
+  "dependencies": {
+    "extract-zip": "^1.6.6",
+    "npm": "^6.0.1"
+  }
+}

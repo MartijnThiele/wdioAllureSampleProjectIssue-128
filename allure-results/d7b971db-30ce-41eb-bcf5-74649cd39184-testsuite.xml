@@ -1,0 +1,83 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1533642247716' stop='1533642248670'>
+    <name>Allure test 1, with hooks</name>
+    <title>Allure test 1, with hooks</title>
+    <test-cases>
+        <test-case start='1533642247716' status='passed' stop='1533642248390'>
+            <name>"before all" hook</name>
+            <title>"before all" hook</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1533642247716' status='passed' stop='1533642248390'>
+                    <name>POST /wd/hub/session/bb202ac84de3faa250a5049f1fca7cf8/url</name>
+                    <title>POST /wd/hub/session/bb202ac84de3faa250a5049f1fca7cf8/url</title>
+                    <attachments>
+                        <attachment title='Request' source='7502eb61-6916-48e4-bb98-2200b28dac3e-attachment.json' type='application/json' size='39'/>
+                        <attachment title='Response' source='9c731d09-a6a6-44c7-8299-8981b232bee2-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1533642248391' status='passed' stop='1533642248394'>
+            <name>1a. this is an enabled test that has a successfull assert</name>
+            <title>1a. this is an enabled test that has a successfull assert</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","maxInstances":1,"chromeOptions":{"args":["--start-maximized","--incognito"]}}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\wdioAllureIssue128\\test\\specs\\allure\\test1-hooks.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1533642248399' status='failed' stop='1533642248406'>
+            <name>1b. this is an enabled test that has a failed assert</name>
+            <title>1b. this is an enabled test that has a failed assert</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+                <parameter kind='environment-variable' name='capabilities' value='{"browserName":"chrome","maxInstances":1,"chromeOptions":{"args":["--start-maximized","--incognito"]}}'/>
+                <parameter kind='environment-variable' name='spec files' value='["C:\\wdioAllureIssue128\\test\\specs\\allure\\test1-hooks.js"]'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>foo should equal foo: expected 'foo' to include 'bar'</message>
+                <stack-trace>AssertionError: foo should equal foo: expected 'foo' to include 'bar'
+                    at Context.&lt;anonymous> (C:\wdioAllureIssue128\test\specs\allure\test1-hooks.js:33:55)
+                    at C:\wdioAllureIssue128\node_modules\wdio-sync\build\index.js:590:26
+                    at new Promise (&lt;anonymous>)
+                    at new F (C:\wdioAllureIssue128\node_modules\core-js\library\modules\_export.js:35:28)
+                    at Context.executeSync (C:\wdioAllureIssue128\node_modules\wdio-sync\build\index.js:588:12)
+                    at C:\wdioAllureIssue128\node_modules\wdio-sync\build\index.js:759:42</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1533642248408' status='passed' stop='1533642248669'>
+            <name>"after all" hook</name>
+            <title>"after all" hook</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1533642248409' status='passed' stop='1533642248667'>
+                    <name>POST /wd/hub/session/bb202ac84de3faa250a5049f1fca7cf8/url</name>
+                    <title>POST /wd/hub/session/bb202ac84de3faa250a5049f1fca7cf8/url</title>
+                    <attachments>
+                        <attachment title='Request' source='662a176f-4c9f-4604-9eed-56ea4ff25fe8-attachment.json' type='application/json' size='39'/>
+                        <attachment title='Response' source='6027eb91-7270-4aca-83b7-e6c1577ba523-attachment.json' type='application/json' size='91'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
